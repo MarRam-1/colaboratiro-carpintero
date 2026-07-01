@@ -1,0 +1,110 @@
+/* =============================================
+   MEDIA QUERIES
+   Breakpoints Bootstrap:
+   xs: < 576px  (móvil pequeño)
+   sm: >= 576px
+   md: >= 768px (tablet)
+   lg: >= 992px (desktop)
+   xl: >= 1200px
+   ============================================= */
+
+/* ---- HEADER ---- */
+@media (max-width: 991px) {
+  .header__brand-main {
+    font-size: 1.15rem;
+  }
+
+  /* El menú colapsado de Bootstrap tiene fondo oscuro */
+  .header .navbar-collapse {
+    background-color: var(--color-dark);
+    padding: 1rem 0.5rem;
+  }
+
+  .header__nav .nav-link {
+    padding: 0.5rem 0;
+  }
+
+  .header__nav .btn {
+    margin-top: 0.5rem;
+    display: inline-block;
+  }
+}
+
+/* ---- HERO ---- */
+@media (max-width: 991px) {
+  .hero {
+    padding: 4rem 0;
+  }
+
+  .hero__title {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero {
+    padding: 3rem 0;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* ---- TÍTULOS DE SECCIÓN ---- */
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .modo-juego .section-title {
+    font-size: 2rem;
+  }
+}
+
+/* ---- MODO JUEGO ---- */
+@media (max-width: 767px) {
+  .modo-juego {
+    padding: 3.5rem 0;
+  }
+
+  .option-card {
+    padding: 1.5rem;
+  }
+}
+
+/* ---- NOSOTROS / ABOUT ---- */
+@media (max-width: 991px) {
+  .about {
+    padding: 3.5rem 0;
+  }
+}
+
+/* ---- SERVICIOS ---- */
+@media (max-width: 767px) {
+  .services {
+    padding: 3.5rem 0;
+  }
+}
+
+/* ---- CTA ---- */
+@media (max-width: 575px) {
+  .cta {
+    padding: 3.5rem 0;
+  }
+}
+
+/* ---- FOOTER ---- */
+@media (max-width: 767px) {
+  .footer__brand-name {
+    font-size: 1rem;
+  }
+
+  .footer__bottom {
+    text-align: center;
+  }
+}
