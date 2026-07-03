@@ -1,110 +1,39 @@
 /* =============================================
    MEDIA QUERIES
-   Breakpoints Bootstrap:
-   xs: < 576px  (móvil pequeño)
-   sm: >= 576px
-   md: >= 768px (tablet)
-   lg: >= 992px (desktop)
-   xl: >= 1200px
+   Breakpoints (Bootstrap):
+   lg: < 992px  │  md: < 768px  │  sm: < 576px
    ============================================= */
 
-/* ---- HEADER ---- */
+/* ---- LARGE → TABLET (< 992px) ---- */
 @media (max-width: 991px) {
-  .header__brand-main {
-    font-size: 1.15rem;
-  }
+  /* Header */
+  .header__brand-main          { font-size: 1.15rem; }
+  .header .navbar-collapse     { background-color: var(--color-dark); padding: 1rem 0.5rem; }
+  .header__nav .nav-link       { padding: 0.5rem 0; }
+  .header__nav .btn            { margin-top: 0.5rem; display: inline-block; }
 
-  /* El menú colapsado de Bootstrap tiene fondo oscuro */
-  .header .navbar-collapse {
-    background-color: var(--color-dark);
-    padding: 1rem 0.5rem;
-  }
+  /* Hero */
+  .hero                        { padding: 4rem 0; }
+  .hero__title                 { font-size: 2.6rem; }
+  .flip-scene                  { width: 240px; height: 240px; }
+  .flip-scene--mobile          { width: 130px; height: 130px; }
 
-  .header__nav .nav-link {
-    padding: 0.5rem 0;
-  }
-
-  .header__nav .btn {
-    margin-top: 0.5rem;
-    display: inline-block;
-  }
+  /* Nosotros */
+  .about                       { padding: 3.5rem 0; }
 }
 
-/* ---- HERO ---- */
-@media (max-width: 991px) {
-  .hero {
-    padding: 4rem 0;
-  }
-
-  .hero__title {
-    font-size: 2.6rem;
-  }
-
-  .flip-scene {
-    width: 240px;
-    height: 240px;
-  }
-
-  .flip-scene--mobile {
-    width: 130px;
-    height: 130px;
-  }
-}
-
-@media (max-width: 575px) {
-  .hero {
-    padding: 3rem 0;
-  }
-
-  .hero__title {
-    font-size: 2rem;
-  }
-
-  .hero__subtitle {
-    font-size: 1rem;
-  }
-
-  /* Espacio extra a la derecha para que el título no choque con el logo */
-  .hero__eyebrow,
-  .hero__title {
-    padding-right: 7rem;
-  }
-}
-
-/* ---- TÍTULOS DE SECCIÓN ---- */
+/* ---- MEDIUM → MÓVIL (< 768px) ---- */
 @media (max-width: 767px) {
-  .section-title {
-    font-size: 1.75rem;
-  }
+  /* Títulos de sección */
+  .section-title               { font-size: 1.75rem; }
+  .modo-juego .section-title   { font-size: 2rem; }
 
-  .modo-juego .section-title {
-    font-size: 2rem;
-  }
-}
+  /* Modo Juego */
+  .modo-juego                  { padding: 3.5rem 0; }
+  .option-card                 { padding: 1.5rem; }
 
-/* ---- MODO JUEGO ---- */
-@media (max-width: 767px) {
-  .modo-juego {
-    padding: 3.5rem 0;
-  }
-
-  .option-card {
-    padding: 1.5rem;
-  }
-}
-
-/* ---- NOSOTROS / ABOUT ---- */
-@media (max-width: 991px) {
-  .about {
-    padding: 3.5rem 0;
-  }
-}
-
-/* ---- SERVICIOS ---- */
-@media (max-width: 767px) {
-  .services {
-    padding: 3.5rem 0;
-  }
+  /* Servicios */
+  .services                    { padding: 3.5rem 0; }
 
   /* Desactivación instantánea — sin transición de salida */
   .service-card .service-card__overlay,
@@ -114,7 +43,7 @@
     transition-duration: 0s;
   }
 
-  /* Activación suave cuando toca la línea central */
+  /* Activación suave al tocar la línea central */
   .service-card.is-active .service-card__img {
     transform: scale(1.05);
     transition: transform 0.25s ease;
@@ -129,22 +58,23 @@
     transform: translateY(0);
     transition: opacity 0.2s ease, transform 0.2s ease;
   }
+
+  /* Footer */
+  .footer__brand-name          { font-size: 1rem; }
+  .footer__bottom              { text-align: center; }
 }
 
-/* ---- CTA ---- */
+/* ---- SMALL → MÓVIL PEQUEÑO (< 576px) ---- */
 @media (max-width: 575px) {
-  .cta {
-    padding: 3.5rem 0;
-  }
-}
+  /* Hero */
+  .hero                        { padding: 3rem 0; }
+  .hero__title                 { font-size: 2rem; }
+  .hero__subtitle              { font-size: 1rem; }
 
-/* ---- FOOTER ---- */
-@media (max-width: 767px) {
-  .footer__brand-name {
-    font-size: 1rem;
-  }
+  /* Espacio para que el título no choque con el logo flotante */
+  .hero__eyebrow,
+  .hero__title                 { padding-right: 7rem; }
 
-  .footer__bottom {
-    text-align: center;
-  }
+  /* CTA */
+  .cta                         { padding: 3.5rem 0; }
 }
