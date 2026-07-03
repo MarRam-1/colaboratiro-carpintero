@@ -608,6 +608,23 @@ body {
   color: var(--color-cream);
 }
 
+.footer__social {
+  display: flex;
+  gap: 1.1rem;
+  margin-top: 1rem;
+}
+
+.footer__social a {
+  color: var(--color-oak);
+  font-size: 1.15rem;
+  text-decoration: none;
+  transition: color 0.18s ease;
+}
+
+.footer__social a:hover {
+  color: var(--color-cream);
+}
+
 .footer__bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }

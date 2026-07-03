@@ -1,3 +1,11 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faTiktok,
+  faFacebookF,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -38,6 +46,7 @@ export default function Footer() {
                   rel="noreferrer"
                   href="https://wa.me/5213324922786"
                 >
+                  <FontAwesomeIcon icon={faWhatsapp} className="me-2" />
                   3324922786
                 </a>
               </li>
@@ -51,6 +60,32 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
+            <div className="footer__social">
+              <a
+                href="https://www.instagram.com/colaboratorio.carpintero/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram"
+              >
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+              <a
+                href="https://www.tiktok.com/@colaboratorio.carpintero"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="TikTok"
+              >
+                <FontAwesomeIcon icon={faTiktok} />
+              </a>
+              <a
+                href="https://www.facebook.com/colaboratorio.carpintero"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Facebook"
+              >
+                <FontAwesomeIcon icon={faFacebookF} />
+              </a>
+            </div>
           </div>
         </div>
 

@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import FlipCard from "./FlipCard";
 import imgMuebles from "./assets/muebles.png";
 import imgInteriores from "./assets/interiores.png";
@@ -224,10 +226,7 @@ export default function Home() {
               <div className="option-card option-card--rent">
                 <div className="option-card__eyebrow">RENTA</div>
                 <h3 className="option-card__title">Partida de un día</h3>
-                <p>
-                  ¿Evento próximo? Renta por evento. Te lo llevamos, instalamos
-                  y recogemos. Sin inventario. Sin pretextos.
-                </p>
+                <p>¿Evento próximo? Renta por evento.</p>
                 <a href="#contacto" className="btn btn-outline-light">
                   ENTRAR A LA PARTIDA
                 </a>
@@ -316,6 +315,7 @@ export default function Home() {
             rel="noreferrer"
             className="btn btn-primary btn-lg"
           >
+            <FontAwesomeIcon icon={faWhatsapp} className="me-2" />
             Escríbenos
           </a>
         </div>
