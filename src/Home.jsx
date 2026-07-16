@@ -137,7 +137,7 @@ export default function Home() {
                   Ver nuestro trabajo
                 </a>
                 <a
-                  href="#modo-juego"
+                  href="/modo-juego"
                   className="btn btn-outline-primary btn-lg"
                 >
                   Conoce Modo Juego

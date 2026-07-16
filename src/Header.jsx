@@ -23,11 +23,11 @@ export default function Header() {
 
           <div className="collapse navbar-collapse" id="mainNav">
             <div className="navbar-nav ms-auto d-flex align-items-lg-center gap-3 header__nav">
-              <a href="#inicio" className="nav-link">Inicio</a>
-              <a href="#nosotros" className="nav-link">Nosotros</a>
-              <a href="#taller" className="nav-link">Taller</a>
-              <a href="#modo-juego" className="nav-link header__nav-highlight">Modo Juego</a>
-              <a href="#contacto" className="btn btn-primary">Contacto</a>
+              <a href="/#inicio" className="nav-link">Inicio</a>
+              <a href="/#nosotros" className="nav-link">Nosotros</a>
+              <a href="/#taller" className="nav-link">Taller</a>
+              <a href="/modo-juego" className="nav-link header__nav-highlight">Modo Juego</a>
+              <a href="/#contacto" className="btn btn-primary">Contacto</a>
             </div>
           </div>
 

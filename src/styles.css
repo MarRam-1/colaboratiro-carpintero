@@ -634,3 +634,284 @@ body {
   color: rgba(253, 248, 240, 0.4);
   margin: 0;
 }
+
+/* =============================================
+   PÁGINA MODO JUEGO — CATÁLOGO
+   ============================================= */
+
+/* Secciones base */
+.mjp-section {
+  padding: 5rem 0;
+}
+
+.mjp-section--light {
+  background-color: var(--color-cream);
+}
+
+.mjp-section--dark {
+  background-color: var(--color-dark);
+}
+
+.mjp-section--green {
+  background-color: var(--color-green-dark);
+}
+
+.mjp-subtitle--dim {
+  color: rgba(253, 248, 240, 0.6);
+}
+
+/* Hero */
+.mjp-hero {
+  background-color: var(--color-green-dark);
+  padding: 6rem 0 5rem;
+}
+
+.mjp-hero__title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-cream);
+  line-height: 1.1;
+  margin: 0 0 0.75rem;
+}
+
+.mjp-hero__sub {
+  font-size: 1.1rem;
+  color: var(--color-oak);
+  margin: 0 0 0.25rem;
+}
+
+.mjp-hero__sub2 {
+  font-size: 0.95rem;
+  color: rgba(253, 248, 240, 0.5);
+  letter-spacing: 0.04em;
+  margin: 0 0 2rem;
+}
+
+/* Stat bars — variante clara (sobre fondo cream) */
+.mj-stat--light .mj-stat__label {
+  color: rgba(90, 74, 58, 0.6);
+}
+
+.mj-stat--light .mj-stat__value {
+  color: var(--color-muted);
+}
+
+.mj-stat--light .mj-stat__track {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Cards de juegos gigantes */
+.mjp-catalog-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.mjp-catalog-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.14);
+  transform: translateY(-4px);
+}
+
+.mjp-catalog-card__img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.mjp-catalog-card__body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.mjp-catalog-card__name {
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-dark);
+  margin: 0 0 0.5rem;
+}
+
+.mjp-catalog-card__desc {
+  font-size: 0.92rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+  margin: 0 0 1.1rem;
+  flex: 1;
+}
+
+/* Cards de juegos minis */
+.mjp-mini-card {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 1.75rem 1.5rem;
+  height: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.mjp-mini-card:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mjp-mini-card__icon {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.mjp-mini-card__name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-cream);
+  margin: 0 0 0.4rem;
+}
+
+.mjp-mini-card__desc {
+  font-size: 0.875rem;
+  color: rgba(253, 248, 240, 0.6);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Callout "tu idea de juego" */
+.mjp-custom-callout {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.mjp-custom-callout--light {
+  background-color: var(--color-green-dark);
+  border-color: transparent;
+}
+
+.mjp-custom-callout__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-cream);
+  margin: 0 0 0.4rem;
+}
+
+.mjp-custom-callout__title--dark {
+  color: var(--color-cream);
+}
+
+.mjp-custom-callout__text {
+  font-size: 0.92rem;
+  color: rgba(253, 248, 240, 0.65);
+  margin: 0;
+  max-width: 520px;
+  line-height: 1.6;
+}
+
+.mjp-custom-callout__text--dark {
+  color: rgba(253, 248, 240, 0.65);
+}
+
+.mjp-custom-callout__btn {
+  flex-shrink: 0;
+}
+
+/* Cards de personalización */
+.mjp-feature-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  height: 100%;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+}
+
+.mjp-feature-card__icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.mjp-feature-card__title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin: 0 0 0.6rem;
+}
+
+.mjp-feature-card__text {
+  font-size: 0.92rem;
+  color: var(--color-muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Cards de contacto */
+.mjp-contact-card {
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  transition: background-color 0.2s ease;
+}
+
+.mjp-contact-card:hover {
+  background-color: rgba(255, 255, 255, 0.11);
+}
+
+.mjp-contact-card__icon {
+  font-size: 2.2rem;
+  color: var(--color-oak);
+  margin-bottom: 0.4rem;
+}
+
+.mjp-contact-card__label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-cream);
+  margin: 0;
+}
+
+.mjp-contact-card__handle {
+  font-size: 0.85rem;
+  color: rgba(253, 248, 240, 0.55);
+  margin: 0 0 0.75rem;
+}
+
+.mjp-contact-card__social-icons {
+  display: flex;
+  gap: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.mjp-contact-card__social-link {
+  font-size: 2rem;
+  color: var(--color-oak);
+  text-decoration: none;
+  transition: color 0.18s ease;
+}
+
+.mjp-contact-card__social-link:hover {
+  color: var(--color-cream);
+}
