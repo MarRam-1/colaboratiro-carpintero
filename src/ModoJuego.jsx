@@ -206,11 +206,19 @@ export default function ModoJuego() {
             <FontAwesomeIcon icon={faWhatsapp} className="me-2" />
             Hablar por WhatsApp
           </a>
+
+          <div className="mjp-hero__nav">
+            <a href="#gigantes" className="mjp-hero__nav-link">Juegos Gigantes</a>
+            <span className="mjp-hero__nav-sep">·</span>
+            <a href="#minis" className="mjp-hero__nav-link">Juegos Minis</a>
+            <span className="mjp-hero__nav-sep">·</span>
+            <a href="#personalizado" className="mjp-hero__nav-link">Personalizado</a>
+          </div>
         </div>
       </section>
 
       {/* JUEGOS GIGANTES */}
-      <section className="mjp-section mjp-section--light">
+      <section id="gigantes" className="mjp-section mjp-section--light">
         <div className="container-xl">
           <h2 className="section-title">Juegos Gigantes</h2>
           <p className="section-subtitle">
@@ -228,7 +236,7 @@ export default function ModoJuego() {
       </section>
 
       {/* JUEGOS MINIS */}
-      <section className="mjp-section mjp-section--dark">
+      <section id="minis" className="mjp-section mjp-section--dark">
         <div className="container-xl">
           <h2 className="section-title section-title--light">Juegos Minis</h2>
           <p className="section-subtitle mjp-subtitle--dim">
@@ -264,7 +272,7 @@ export default function ModoJuego() {
       </section>
 
       {/* PERSONALIZACIÓN */}
-      <section className="mjp-section mjp-section--light">
+      <section id="personalizado" className="mjp-section mjp-section--light">
         <div className="container-xl">
           <h2 className="section-title">Lo hacemos tuyo</h2>
           <p className="section-subtitle">
